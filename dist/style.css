@@ -10,11 +10,7 @@ html {
 	
 	/*background = gradient + image pattern combo*/
 	background: 
-		/* #56afb1; */
-		/* hsl(210,38%,28%); */
-		linear-gradient(125deg,#009496,rgba(0,220,223,.5)),linear-gradient(118deg,hsla(0,0%,100%,0),hsla(0,0%,100%,.69)),linear-gradient(#00b7ba,#00b7ba);
-		/* linear-gradient(to bottom, rgba(140,122,122,1) 0%, rgba(175,135,124,1) 65%, rgba(175,135,124,1) 100%) fixed; */
-		/* linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6)); */
+		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
 }
 
 body {
@@ -45,7 +41,7 @@ body {
 	display: none;
 }
 /*inputs*/
-#msform input, #msform textarea, #msform select {
+#msform input, #msform textarea {
 	padding: 15px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
@@ -59,7 +55,7 @@ body {
 /*buttons*/
 #msform .action-button {
 	width: 100px;
-	background: #091b30;
+	background: #27AE60;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
@@ -69,7 +65,7 @@ body {
 	margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #091b30;
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 /*headings*/
 .fs-title {
@@ -95,7 +91,7 @@ body {
 	list-style-type: none;
 	color: white;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size: 9px;
 	width: 33.33%;
 	float: left;
 	position: relative;
@@ -130,16 +126,8 @@ body {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-	background: #091b30;
+	background: #27AE60;
 	color: white;
-}
-
-.result {
-	color:#091b30;
-	position: fixed;
-    bottom: 10%;
-    width: 100%;
-    left: 0;
 }
 
 
