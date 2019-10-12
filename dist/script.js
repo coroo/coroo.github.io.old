@@ -1,5 +1,5 @@
 const app = new Vue({
-  el:'#app',
+  el:'#msform',
   data() {
     return {
       step:1,
