@@ -1,0 +1,53 @@
+<!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Account Setup</li>
+    <li>Detail Profiles</li>
+    <li>Booking Details</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset v-if="step === 1">
+
+
+    <h2 class="fs-title">Create your account</h2>
+    <h3 class="fs-subtitle">This is step 1</h3>
+    <input id="name" name="name" placeholder="Name" v-model="registration.name">
+    <input id="email" name="email" placeholder="Email" type="email" v-model="registration.email">
+
+    <button class="next action-button" @click.prevent="next()">Next</button>
+    
+  </fieldset>
+
+  <fieldset v-if="step === 2">
+    <h2 class="fs-title">Detail Profiles</h2>
+    <h3 class="fs-subtitle">Your presence detail</h3>
+    <input id="street" name="street" placeholder="Street" v-model="registration.street">
+    <input id="city" name="city" placeholder="City" v-model="registration.city">
+    <input id="state" name="state" placeholder="State" v-model="registration.state">
+
+    <button class="next action-button" @click.prevent="prev()">Previous</button>
+    <button class="next action-button" @click.prevent="next()">Next</button>
+
+  </fieldset>
+
+  <fieldset v-if="step === 3">
+    <h2 class="fs-title">Booking Details</h2>
+    <h3 class="fs-subtitle">Choose Your Shirt Size</h3>
+    
+    <input id="numtickets" name="numtickets" placholder="Number of Tickets" type="number" v-model="registration.numtickets">
+    <select id="shirtsize" name="shirtsize" v-model="registration.shirtsize">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">X-Large</option>
+    </select>
+
+    <button class="next action-button" @click.prevent="prev()">Previous</button>
+    <button class="next action-button" @click.prevent="submit()">Save</button>
+    
+  </fieldset>
+
+  <br/><br/>Debug: {{registration}}
+
+  </form>
