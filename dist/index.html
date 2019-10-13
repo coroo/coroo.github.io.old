@@ -24,7 +24,7 @@
     <input id="name" name="name" placeholder="Name" v-model="registration.name">
     <input id="email" name="email" placeholder="Email" type="email" v-model="registration.email">
 
-    <button class="next action-button" @click.prevent="next()">Next</button>
+    <button id="button-1" class="next action-button" @click.prevent="next()">Next</button>
     
   </fieldset>
 
@@ -35,8 +35,8 @@
     <input id="city" name="city" placeholder="City" v-model="registration.city">
     <input id="state" name="state" placeholder="State" v-model="registration.state">
 
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <button class="next action-button" @click.prevent="next()">Next</button>
+    <input id="button-1-b" type="button" name="previous" class="previous action-button" value="Previous" />
+    <button id="button-2" class="next action-button" @click.prevent="next()">Next</button>
 
   </fieldset>
 
@@ -52,8 +52,8 @@
       <option value="XL">X-Large</option>
     </select>
 
-    <input type="button" name="previous" class="previous action-button" value="Previous" />
-    <button class="next action-button" @click.prevent="submit()">Save</button>
+    <input id="button-2-b" type="button" name="previous" class="previous action-button" value="Previous" />
+    <button id="button-3" class="next action-button" @click.prevent="submit()">Save</button>
     
   </fieldset>
 

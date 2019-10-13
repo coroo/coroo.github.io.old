@@ -1,4 +1,4 @@
-# Multi-step Vue form
- _A Pen created at CodePen.io. Original URL: [https://codepen.io/coroowicaksono/pen/XWWXKvo](https://codepen.io/coroowicaksono/pen/XWWXKvo).
+# Multi-Step Form with Wizard using Vue
+ URL: [https://coroo.github.io/dist/](https://coroo.github.io/dist/).
 
  
