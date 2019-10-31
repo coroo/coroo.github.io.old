@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <title>Multi-step Vue form</title>
   <link rel="stylesheet" href="./style.css">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K6Z9Q3V');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6Z9Q3V"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <!-- partial:index.partial.html -->
 <!-- multistep form -->
 <form id="msform">
@@ -20,7 +31,7 @@
 
 
     <h2 class="fs-title">Create your account</h2>
-    <h3 class="fs-subtitle">This is step 1</h3>
+    <h3 class="fs-subtitle">This is step 1</h3>`
     <input id="name" name="name" placeholder="Name" v-model="registration.name">
     <input id="email" name="email" placeholder="Email" type="email" v-model="registration.email">
 
