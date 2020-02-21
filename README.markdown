@@ -1,7 +1,9 @@
-<img style="float:left;margin:0 10px 10px 0" src="https://octodex.github.com/images/yaktocat.png" width="40%">
+<img style="margin:0 10px 10px 0" src="https://octodex.github.com/images/yaktocat.png" width="40%">
 
-## Ouch, sorry you're in wrong place
+<div style="float:right;margin:0 10px 10px 0; margin-top:20%">
+  <h3>Ouch, sorry you're in wrong place</h3>
 What you're looking for may have been misplaced in Long Term Memory
+</div>
 
 ## Packages:
 
